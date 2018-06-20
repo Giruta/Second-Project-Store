@@ -100,7 +100,7 @@ body {
   font-size: 1rem;  /*16px*/
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #263238;
   text-align: left;
   background-color: #fff;
 }
@@ -123,6 +123,16 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+{
+  outline: none;
 }
 
 abbr[title],
@@ -242,6 +252,7 @@ figure {
 }
 
 img {
+  max-width: 100%;
   vertical-align: middle;
   border-style: none;
 }
@@ -273,13 +284,8 @@ label {
 
 button {
   border-radius: 0;
+  border: none;
   cursor: pointer;
-  outline: none;
-}
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 input,
