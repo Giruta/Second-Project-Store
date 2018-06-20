@@ -124,6 +124,19 @@
     font-size: 0.875rem;
     font-family: 'Roboto Bold', sans-serif;
 }
+.header-nav {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: .875rem;
+    line-height: 1.875rem;
+}
+.header-nav a {
+    color: white;
+    padding: 15px 0;
+    display: inline-block;
+}
+.header-nav a + a {
+    margin-left: 38px;
+}
 /*---- header end---- */
 
 /* ---inner start ---*/
@@ -131,6 +144,14 @@
     padding-top: 57px;
     padding-bottom: 67px;
     background: url("../img/small-inner-bg.jpg") no-repeat center / cover;
+}
+.inner-subtitle {
+    color: white;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 16px;
+
 }
 .search-wrap {
     max-width: 671px;
@@ -147,6 +168,7 @@
     padding-right: 50px;
     font-size: 14px;
     color: #90a4ae;
+    letter-spacing: 0.05em;
 }
 .search-input::-webkit-input-placeholder { color: #90a4ae; }
 .search-input::-moz-placeholder          { color: #90a4ae; } /* Firefox 19+ */
@@ -155,10 +177,10 @@
 
 .search-input-btn {
     background-color: transparent;
-    color: #7c939f;
-    font-size: 20px;
+    color: #78909c;
+    font-size: 1.25rem;
     position: absolute;
-    right: 20px;
+    right: 12px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -166,3 +188,15 @@
 /*/////////////////////////*/
 /* ---Custom styles end---*/
 /*///////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
