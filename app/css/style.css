@@ -24,7 +24,12 @@
 .bg-dark-green {
     background-color: #8bc34a;
 }
-
+.bg-white {
+    background-color: #fff;
+}
+.border-grey {
+    border: 1px solid #dedede;
+}
 .ml-auto {
     margin-left: auto;
 }
@@ -55,6 +60,7 @@
 /*.default-section {*/
     /*padding: 135px 0;*/
 /*}*/
+
 .btn { /* общие стили для всех кнопок */
     display: inline-block;
     text-transform: capitalize;
@@ -70,7 +76,7 @@
             border-radius: 4px;
     font-size: .75rem;
 }
-.btn-sidebar {
+.btn-aside {
     width: 205px;
     padding: 11px 0;
     font-size: .9375rem;
@@ -91,12 +97,117 @@
     padding: 13px 0;
     font-family: 'Roboto Medium', sans-serif;
 }
+.breadcrumb {
+    padding: 45px 0 36px;
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+.breadcrumb > li a {
+    color: #b0bec5;
+    font-size: .9375rem;
+}
+.breadcrumb > li + li::before {
+    content: '-';
+    padding: 0 6px;
+    color: #8bc34a;
+}
+.breadcrumb > .active {
+    color: #263238;
+}
+.aside-section {
+    padding: 18px 32px 38px 28px;
+}
+.aside-section + .aside-section {
+    margin-top: 30px;
+}
+.aside-title {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #dde3e8;
+    margin-bottom: 25px;
+    font-size: 1.25rem;
+    font-family: 'Roboto Bold', sans-serif;
+}
+.card {
+    -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    -webkit-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+.card:hover {
+    -webkit-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+    -moz-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+    box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+}
+.card-img img{
+    width: 100%;
+}
+.card-description {
+    padding: 21px 23px;
+    border-bottom: 1px solid #e7ecf2;
+}
+.card-item-info .card-title, .card-item-info .card-category {
+    display: block;
+    font-family: 'Roboto Medium', sans-serif;
+}
+.card-item-info .card-title{
+    color: #263238;
+}
+.card-item-info .card-category{
+    color: #8bc34a;
+    font-size: .875rem;
+    line-height: 1.6rem;
+}
+.card-price {
+    color: #263238;
+    font-size: 1.25rem;
+    font-family: 'Roboto Bold', sans-serif;
+}
+.card-author-info {
+    padding: 16px 20px;
+}
+.card-author img {
+    width: 30px;
+    height: 30px;
+}
+.card-author span {
+    color: #546e7a;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: .875rem;
+    margin-left: 13px;
+}
+.product-rating li{
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #ffa726;
+    line-height: 1.8125rem;
+    margin-right: -2px;
+}
+.product-reviews-count::before {
+    content: '(';
+    color: #b0bec5;
+    margin-right: 2px;
+}
+.product-reviews-count::after {
+    content: ')';
+    color: #b0bec5;
+    margin-left: 2px;
+}
+.product-reviews-count {
+    font-size: .75rem;
+    color: #263238;
+    margin-left: 10px;
+}
 /* Default component end */
 
 /*///////////////////////////*/
 /* ---Custom styles start---*/
 /*/////////////////////////*/
-
+/******PAGE ALL ITEMS start******/
+/*/////////////////////////*/
 /*----header start-----*/
 .top-header {
     padding-top: 26px;
@@ -192,7 +303,7 @@
     margin-left: 38px;
 }
 /*---- header end---- */
-
+/* -------------------*/
 /* ---inner start ---*/
 .inner.small-inner {
     padding-top: 57px;
@@ -247,6 +358,70 @@
             transform: translateY(-50%);
 }
 /* --------inner end -------*/
+/*/////////////////////////*/
+/* ---all-items-wrap -----*/
+.default-chevron-list li + li {
+    margin-top: 18px;
+}
+.default-chevron-list > li i {
+    color: #8bc34a;
+    font-size: .875rem;
+    margin-right: 10px;
+}
+.default-chevron-list span {
+    font-size: .9375rem;
+}
+.list-text {
+    color: #263238;
+}
+.category-item-count {
+    color: #90a4ae;
+}
+.all-items-wrap .card {
+    margin-bottom: 30px;
+}
+.view-controls {
+    padding: 20px;
+    margin-bottom: 47px;
+}
+/* -----all-items-wrap end -----*/
+/* -----aside start -----*/
+.aside-section .card {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 27px;
+}
+.aside-section .card + .card {
+    border-top: 1px solid #dde3e8;
+    padding-top: 27px;
+}
+.aside-section .card-title {
+    font-family: 'Roboto Bold', sans-serif;
+}
+.aside-section .card-description {
+    padding: 0;
+    border-bottom: none;
+    margin-top: 16px;
+}
+.aside-section .card-price {
+    font-size: 1rem;
+}
+.aside-section .card-author-info {
+    padding: 10px 0 0;
+}
+.aside-section .card-author span {
+    margin-left: 6px;
+}
+/* -----aside end -----*/
+/*/////////////////////////*/
+/****** PAGE ALL ITEMS end *****/
+/*/////////////////////////*/
+/****** PAGE MAIN end *****/
+/****** PAGE MAIN end *****/
+/*/////////////////////////*/
+/****** PAGE PRODUCT DETAILS end *****/
+/****** PAGE PRODUCT DETAILS end *****/
 /*/////////////////////////*/
 /* ---Custom styles end---*/
 /*///////////////////////*/
