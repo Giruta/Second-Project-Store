@@ -177,7 +177,7 @@
     color: #546e7a;
     font-family: 'Roboto Medium', sans-serif;
     font-size: .875rem;
-    margin-left: 13px;
+    margin-left: 6px;
 }
 .product-rating li{
     display: inline-block;
@@ -360,6 +360,9 @@
 /* --------inner end -------*/
 /*/////////////////////////*/
 /* ---all-items-wrap -----*/
+.all-items-wrap {
+    padding-bottom: 110px;
+}
 .default-chevron-list li + li {
     margin-top: 18px;
 }
@@ -382,7 +385,60 @@
 }
 .view-controls {
     padding: 20px;
-    margin-bottom: 47px;
+    margin-bottom: 27px;
+}
+.view-icon-amount {
+    color: #455a64;
+    font-size: .875rem;
+    margin-right: 8px;
+}
+.view-controls-sort span {
+    color: #707070;
+    font-size: .875rem;
+}
+.view-icon-sort {
+    color: #707070;
+    font-size: 1.125rem;
+    margin-left: 8px;
+}
+.view-icon-type {
+    color: #90a4ae;
+    font-size: 1rem;
+    margin-left: 13px;
+}
+.view-icon-type.active-type, .view-icon-amount:hover,
+.view-icon-sort:hover, .view-icon-type:hover {
+    color: #8bc34a;
+}
+.page-link {
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.page-item {
+    width: 43px;
+    height: 38px;
+    background-color: white;
+    -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+       -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+            box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+    text-align: center;
+    line-height: 38px;
+    color: #263238;
+    font-family: 'Roboto Medium', sans-serif;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.page-item + .page-item {
+    margin-left: 8px;
+}
+.page-item:hover {
+    background-color: #e74c3c;
+    color: #fff;
 }
 /* -----all-items-wrap end -----*/
 /* -----aside start -----*/
@@ -409,9 +465,6 @@
 }
 .aside-section .card-author-info {
     padding: 10px 0 0;
-}
-.aside-section .card-author span {
-    margin-left: 6px;
 }
 /* -----aside end -----*/
 /*/////////////////////////*/
