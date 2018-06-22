@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <!-- Bootstrap grid -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- ion range styles -->
+    <link rel="stylesheet" href="../src/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="../src/css/ion.rangeSlider.skinNice.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../../../Lesson_14_store/basic-gulp-template-master/app/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="../../../../WayUP/Lesson_9_Site/Home_Work/layout/css/main.css">
 </head>
 <body>
     <header id="header">
@@ -143,9 +144,13 @@
                             </ul>
                         </div>
                         <!-- /.aside-section -->
-                        <div class="aside-section bg-white border-grey">
+                        <div class="aside-section bg-white border-grey price-range-section">
                             <h3 class="aside-title">Price Range</h3>
                             <!-- /.aside-title -->
+                            <div class="range-slider-wrap">
+                                <input type="text" id="price-range" name="price-range" value="" />
+                            </div>
+                            <!-- /.range-slider-wrap -->
                             <button class="btn btn-aside bg-dark-green">Search</button>
                         </div>
                         <!-- /.aside-section -->
@@ -757,6 +762,7 @@
                             </ul>
                         </nav>
                     </div>
+                    <!-- /.page-panel -->
                 </div>
             </div>
         </div>
@@ -769,8 +775,14 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- ion range slider -->
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- Init plugins -->
+    <script src="js/init.js"></script>
 </body>
 </html>
 

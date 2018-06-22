@@ -237,6 +237,19 @@
     position: relative;
     cursor: pointer;
 }
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    z-index: 99;
+    border: 1px solid #d3d3d3;
+    min-width: 160px;
+    right: 0;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, .2);
+}
+.dropdown-menu.show {
+    display: block;
+}
 .notify-count {
     position: absolute;
     width: 18px;
@@ -416,6 +429,12 @@
 }
 /* -----all-items-wrap end -----*/
 /* -----aside start -----*/
+.price-range-section button {
+    margin-top: 46px;
+}
+.price-range-section .aside-title {
+    margin-bottom: 17px;
+}
 .aside-section .card {
     box-shadow: none;
     margin-bottom: 27px;
@@ -446,6 +465,39 @@
 /****** PAGE MAIN end *****/
 /*/////////////////////////*/
 /****** PAGE PRODUCT DETAILS end *****/
+/* product tabs */
+.tab-pane {
+    display: none;
+}
+.tab-pane.show {
+    display: block;
+}
+.nav-item {
+    flex-grow: 1;
+}
+.nav-item + .nav-item {
+    border-left: 1px solid #dfdfdf;
+}
+.nav-link {
+    padding: 20px 10px;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #dfdfdf;
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    right: -1px;
+    height: 0;
+    transition: all .2s ease-in;
+}
+.nav-link.active::after {
+    height: 3px;
+    background-color: #8bc34a;
+}
 /****** PAGE PRODUCT DETAILS end *****/
 /*/////////////////////////*/
 /* ---Custom styles end---*/
