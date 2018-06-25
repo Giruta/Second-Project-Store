@@ -25,6 +25,8 @@
     height: 5px; 
     top: 25px;
     background: #f2f5f8;
+    border-radius: 2px;
+
 }
     .irs-line-left,
     .irs-line-mid

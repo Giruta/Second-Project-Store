@@ -25,6 +25,10 @@
     height: 5px; 
     top: 25px;
     background: #f2f5f8;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+
 }
     .irs-line-left,
     .irs-line-mid
