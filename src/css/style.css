@@ -167,6 +167,25 @@
     margin-top: 25px;
     background-color: #8bc34a;
 }
+.form-control {
+    width: 100%;
+    height: 40px;
+    padding: 0 17px;
+    background-color: #f9f9f9;
+    border: 1px solid #d7d7d7;
+    font: 15px/40px Roboto Regular, sans-serif;
+    color: #707070;
+    position: relative;
+    outline: none;
+}
+.form-control-icon {
+    position: absolute;
+    top: 12px;
+    right: 35px;
+    cursor: pointer;
+    color: #444;
+    font-size: .9375rem;
+}
 .default-chevron-list li + li {
     margin-top: 18px;
 }
@@ -283,6 +302,9 @@
 /******PAGE ALL ITEMS start******/
 /*/////////////////////////*/
 /*----header start-----*/
+#header {
+    background-color: #fff;
+}
 .top-header {
     padding-top: 26px;
     padding-bottom: 22px;
@@ -354,6 +376,9 @@
 .dropdown-notify-item {
     padding: 18px 30px 16px 21px;
     width: 268px;
+}
+.dropdown-notify-item:hover{
+    background-color: #0000000f;
 }
 .notify-item-info {
     margin-left: 20px;
@@ -436,6 +461,9 @@
 .dropdown-chevron-list .list-text {
     color: #546e7a;
     font-size: .75rem;
+}
+.dropdown-chevron-list .list-text:hover {
+    color: #263238;
 }
 .user-avatar {
     width: 34px;
@@ -872,7 +900,42 @@
 /*--- footer end ------*/
 /*/////////////////////////*/
 /****** PAGE PRODUCT DETAILS end *****/
-/*/////////////////////////*/
+/*//////////////////////////////////*/
+/****** PAGE UPLOAD PRODUCT start *****/
+.upload-product-content .title-default {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 20px 0 20px 33px;
+    border: 0.2px solid #d7d7d7;
+}
+.upload-product-content {
+    margin-bottom: 108px;
+}
+.form-body {
+    padding-top: 40px;
+    padding-bottom: 65px;
+}
+.form-body label {
+    padding-left: 45px;
+    color: #444;
+    font-size: .9375rem;
+}
+.form-body sup {
+    color: #8bc34a;
+}
+.form-body .row + .row {
+    margin-top: 20px;
+}
+.form-body textarea {
+    min-height: 150px;
+    outline: none;
+}
+.form-body .btn-aside {
+    width: 124px;
+    margin-top: 41px;
+}
+/****** PAGE UPLOAD PRODUCT end *****/
+/*/////////////////////////////////*/
 /* ---Custom styles end---*/
 /*///////////////////////*/
 

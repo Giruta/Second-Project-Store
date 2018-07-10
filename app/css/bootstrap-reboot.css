@@ -127,7 +127,7 @@ p {
 
 input, input:hover, input:focus, input:active,
 button, button:hover, button:focus, button:active,
-select
+select, textarea
 {
   outline: none;
 }
@@ -304,6 +304,7 @@ textarea {
     font-size: inherit;
     line-height: inherit;
     border: none;
+    outline: none;
 }
 
 button,
